@@ -1,0 +1,3 @@
+FROM openjdk:17-jdk-slim
+COPY target/inventory-management-backend.jar inventory-management-backend.jar
+ENTRYPOINT ["java", "-jar", "inventory-management-backend.jar"]
